@@ -9,13 +9,13 @@ img{
 	height: 100%;
 	width: : 100%;
 }
-#home, #ques, #sintomas, #cuidados, #colombia{
+#home, #arqui, #tecno, #contact{
 	border-radius: 10px;
 	color: white;
 }
 
-#home:hover, #ques:hover, #sintomas:hover, #cuidados:hover, #colombia:hover{
-	background-color:#4a0072;
+#home:hover, #arqui:hover, #tecno:hover, #contact:hover{
+	background-color:#7f0000;
 	border-color: white;
 	transition:all .5s ease-in-out
 }
