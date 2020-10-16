@@ -220,14 +220,14 @@ PostCSS son algunos de ellos.</p>
     <div class="form-group col-md-6">
       
       <input type="text" class="form-control" id="inputEmail4" placeholder="Nombre"><br>
-       <input type="email" class="form-control" id="inputEmail4" placeholder="Email"><br>
+       <input type="email" class="form-control" id="email" name="email" placeholder="Email"><br>
         <input type="text" class="form-control" id="inputEmail4" placeholder="Telefono">
     </div>
     <div class="form-group col-md-6">
 
     
       <textarea class="form-control" placeholder="Asunto"></textarea><br>
-      <button type="submit" class="btn btn-danger">Enviar</button>
+      <button type="submit" class="btn btn-danger" value="prueba" onClick="pruebaemail(email.value);">Enviar</button>
     </div>
   </div>
   
@@ -316,7 +316,15 @@ PostCSS son algunos de ellos.</p>
 
 </footer>
 
-
+<script>
+function pruebaemail (valor){
+  re=/^([\da-z_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+  if(!re.exec(valor)){
+    alert('email no valido');
+  }
+  else alert('email valido');
+  }
+</script>
 
 <script type="text/javascript" src="JS/js.js"></script>
 
