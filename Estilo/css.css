@@ -5,6 +5,10 @@ footer{
 	color: white;
 	background-color: #7f0000;
 }
+h3{
+	font-family: 'Lobster', cursive;
+	font-size: 34px;
+}
 img{
 	height: 100%;
 	width: : 100%;
@@ -19,6 +23,17 @@ img{
 	border-color: white;
 	transition:all .5s ease-in-out
 }
+li>a, a:hover{
+	color:white;
+	text-decoration: underline;
+}
+h5, h5+p, p+p{
+	color: white;
+}
 h2{
 	font-size: 25px;
+}
+nav{
+	position: fixed;
+	z-index: 100;
 }
